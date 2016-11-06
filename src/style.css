@@ -18,11 +18,27 @@ body, .section {
   width: 50%;
   height: 50%;
   padding: 2em;
+  overflow: scroll;
 }
 
 .focused {
-  left: 25% !important;
-  top: 25% !important;
+  left: 15% !important;
+  top: 15% !important;
+  width: 70% !important;
+  height: 70% !important;
   opacity: 1;
   z-index: 10;
+}
+
+.api-results {
+  margin: auto;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.charts div{
+  margin: 0.5em;
+  border: 1px solid white;
 }

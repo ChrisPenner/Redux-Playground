@@ -33,3 +33,4 @@ export const getPizzaCost = (state) => {
 }
 
 export const getFocus = state => state.focus
+export const getUsers = state => state.api

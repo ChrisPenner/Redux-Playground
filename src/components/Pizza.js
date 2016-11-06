@@ -44,6 +44,7 @@ const Pizza = ({
   return (
     <div style={{ top:'0', left:'50%' }} className={classes}>
       <a onClick={() => changeFocus('pizza')} > <h1 className='title'> Order a Pizza! </h1> </a>
+      <hr/>
       <p className="control">
         <label className="radio">
           <input type="radio" checked={size === 'small'} value='small'

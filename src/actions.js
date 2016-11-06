@@ -33,3 +33,21 @@ export const changeFocus = (focus) => ({
   type: CHANGE_FOCUS,
   payload: focus,
 })
+
+export const ADD_USER = 'ADD_USER'
+export const addUser = (user) => ({
+  type: ADD_USER,
+  payload: user,
+})
+
+export const fetchUser = () => (dispatch) => {
+  return fetch('https://randomuser.me/api/', {
+    method: 'GET',
+  }).then(resp => resp.json())
+    .then(json => dispatch(addUser(json.results[0])))
+}
+
+export const CLEAR_USERS = 'CLEAR_USERS'
+export const clearUsers = () => ({
+  type: CLEAR_USERS
+})

@@ -32,7 +32,7 @@ const Colors = ({hue, changeColor, focused, visible, changeFocus}) => {
   return (
     <div className={classes} style={style}>
       <a onClick={() => changeFocus('colors')}> <h1 className='title'> Colors </h1> </a>
-      <br/>
+      <hr/>
       <label>
         <input
           className="slider"

@@ -1,6 +1,11 @@
-import {createStore} from 'redux'
+import {createStore, applyMiddleware, compose} from 'redux'
+import thunk from 'redux-thunk';
 import reducer from '../reducers'
 export default createStore(reducer,
-  window.devToolsExtension ? window.devToolsExtension() : f => f
+  compose(
+    applyMiddleware(
+      thunk,
+    ),
+    window.devToolsExtension ? window.devToolsExtension() : f => f
+  )
 )
-
