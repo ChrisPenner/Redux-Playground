@@ -1,0 +1,28 @@
+body, .section {
+  height: 100vh;
+  width: 100%;
+}
+
+.main>.visible {
+  opacity: 1;
+}
+
+.notification a {
+  color: white;
+}
+
+.main>div{
+  position: fixed;
+  opacity: 0.1;
+  transition: all 1s ease-in-out;
+  width: 50%;
+  height: 50%;
+  padding: 2em;
+}
+
+.focused {
+  left: 25% !important;
+  top: 25% !important;
+  opacity: 1;
+  z-index: 10;
+}
