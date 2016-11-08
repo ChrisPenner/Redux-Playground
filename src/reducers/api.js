@@ -1,4 +1,3 @@
-import R from 'ramda'
 import { ADD_USER, CLEAR_USERS } from '../actions'
 
 const DEFAULT_STATE = []

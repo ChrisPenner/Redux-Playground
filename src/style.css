@@ -39,6 +39,7 @@ body, .section {
 }
 
 .charts div{
+  transition: all 1s ease-in-out;
   margin: 0.5em;
   border: 1px solid white;
 }

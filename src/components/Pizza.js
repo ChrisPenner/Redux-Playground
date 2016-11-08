@@ -3,7 +3,6 @@ import R from 'ramda'
 import { connect } from 'react-redux'
 import { getPizzaState, getPizzaCost, getFocus } from '../selectors'
 import { togglePizzaTopping, changePizzaSize, changeFocus } from '../actions'
-import { Link } from 'react-router'
 import classnames from 'classnames'
 
 const stateToProps = (state) => {

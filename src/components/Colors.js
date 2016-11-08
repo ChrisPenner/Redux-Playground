@@ -19,7 +19,6 @@ const dispatchProps = {
 const Colors = ({hue, changeColor, focused, visible, changeFocus}) => {
   const style = {
     background: `hsl(${hue}, 100%, 50%)`,
-    color: `hsl(${hue - 180}, 100%, 60%)`,
     top: '0',
     left: '0',
   }
@@ -31,7 +30,9 @@ const Colors = ({hue, changeColor, focused, visible, changeFocus}) => {
 
   return (
     <div className={classes} style={style}>
-      <a onClick={() => changeFocus('colors')}> <h1 className='title'> Colors </h1> </a>
+      <a onClick={() => changeFocus('colors')}> 
+        <h1 className='title'> Colors </h1> 
+      </a>
       <hr/>
       <label>
         <input

@@ -19,6 +19,13 @@ const dispatchProps = {
 }
 
 const Bars = ({cost, hue, focused, visible, changeFocus, numUsers}) => {
+  const hueStyle = {
+    width: `${(+hue)/3.6}%`,
+    background: `hsl(${(+hue + 100) % 360}, 100%, 50%)`,
+    height: '20px',
+    transition: 'width 0.5s ease-in-out',
+  }
+
   const pizzaStyle = {
     width: `${(cost - 9) * 5}%`,
     background: `hsl(${hue}, 100%, 50%)`,
@@ -45,6 +52,7 @@ const Bars = ({cost, hue, focused, visible, changeFocus, numUsers}) => {
       <div className="charts">
         <h2 className="title"> Pizza Cost <div style={pizzaStyle}> </div></h2>
         <h2 className="title"> Number of Users: <div style={numUsersStyle}> </div></h2>
+        <h2 className="title"> Hue: <div style={hueStyle}> </div></h2>
       </div>
     </div>
   )

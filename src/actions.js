@@ -18,16 +18,6 @@ export const changePizzaSize = (size) => ({
   payload: size,
 })
 
-
-export const LOCATION_CHANGE = 'LOCATION_CHANGE'
-export const changeLocation = (loc) => {
-debugger
-return ({
-  type: LOCATION_CHANGE,
-  payload: loc,
-})
-}
-
 export const CHANGE_FOCUS = 'CHANGE_FOCUS'
 export const changeFocus = (focus) => ({
   type: CHANGE_FOCUS,
